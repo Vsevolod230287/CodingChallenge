@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  padding-top: 30px;
+}
+/*Container nero trasparente principale che ingloba gli elementi*/
+.container {
+  padding-top: 60px;px;
+  margin: auto;
+  width: 850px;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.50);
+}
+/*Sub-container per alineare gli elementi*/
+.sub-container {
+  width: 700px;
+  margin:auto;
+}
+
+/*Header: imagine piu slogan(h1), elementi centrati*/
+header {
+  text-align: center;
+}
+
+header > img {
+  height: 80px;
+  width: 180px;
+}
+
+header > h1 {
+  color: rgb(148, 228, 18)
+}
+
+/* Nav: blocco nav + bottoni*/
+nav {
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  background-color: rgb(148, 228, 18);
+}
+
+button {
+  font-size: 10px;
+}
+
+/*Section:
+  nome_Monopatino(h2),
+  (h4) la_Via,
+  (.arrow) simbolo_Freccia,
+  (._1_section) stato_Caricamento_Monopatino_1
+  (._2_section) stato_Caricamento_Monopatino _2
+  (._3_section) stato_Caricamento_Monopatino_3 */
+section h2 {
+  margin-top: 20px;
+  color: white;
+  display: inline-block;
+}
+
+section h4{
+  color: white;
+}
+
+ section .arrow::before {
+  content: ' \21A3';
+}
+
+._1_section {
+  border-radius: 4px;
+  width: 280px;
+  height: 20px;
+  background-color: rgb(151, 204, 53);
+}
+
+._2_section {
+  border-radius: 4px;
+  width: 400px;
+  height: 20px;
+  background-color: rgb(167, 170, 40);
+}
+
+._3_section {
+  border-radius: 4px;
+  width: 150px;
+  height: 20px;
+  background-color: rgb(117, 120, 87)
+}
